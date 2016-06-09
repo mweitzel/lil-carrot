@@ -1,0 +1,10 @@
+{
+  "name": "lil-carrot",
+  "version": "0.0.1",
+  "repository": "mweitzel/lil-carrot",
+  "description": "Inline Lisp into JavaScript",
+  "keywords": ["lisp", "functional"],
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
