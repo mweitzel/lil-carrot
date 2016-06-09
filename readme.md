@@ -69,6 +69,46 @@ var ˆ = require('lil-carrot').call
 ˆ(log, ˆ(sum35NumbersBelow, 1000))
 ```
 
+You might iterate like this:
+
+```js
+var lc = require('lil-carrot')
+  , ˆ = lc.call
+  , ª = lc.apply
+  , plus = (a, b) => a + b
+
+function _while(transform, data, shouldContinue) {
+  return ˆ(shouldContinue, data)
+  ? _while(transform, ˆ(transform, data), shouldContinue)
+  : data
+}
+
+var nTimes = (n, transform, data) =>
+  ˆ(_while
+  , (i_data) => ª(
+      (i, data) =>
+        [ ˆ(plus, i, 1)
+        , ˆ(transform, data)
+        ]
+    , i_data)
+  , [0, data]
+  , (i_data) => ª(
+      (i, data) => i < n
+    , i_data)
+  )[1]
+
+ˆ(nTimes, 5, () => ˆ(console.log, 'hello'))
+// hello
+// hello
+// hello
+// hello
+// hello
+
+
+ˆ(log, ˆ(nTimes, 10, (i) => i*2, 1))
+// 1024
+```
+
 Its just Lisp :)
 
 # License
