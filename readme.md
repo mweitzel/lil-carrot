@@ -1,10 +1,11 @@
-# lil-carrot (ˆ)
+# lil-carrot ( ˆ )
 
 Semantically LISP, syntactically JavaScript.
 
 ES6 allows the [circumflex ˆ](https://en.wikipedia.org/wiki/Circumflex) (the little carrot) and [ordinal symbols ª and º](https://en.wikipedia.org/wiki/Ordinal_indicator#.C2.BA_and_.C2.AA) to be used as variables.
 
-I've found ˆ and ª read well as call and apply, but you can use whatever you like. ˆ and ª can be typed on a mac with [alt-i] and [alt-9], respectively.
+I've found ˆ and ª read and write well as call and apply, but you can use whatever you like.  
+You can type ˆ and ª on a mac with [alt-i] and [alt-9], respectively.
 
 ## Installation
 
@@ -12,7 +13,7 @@ I've found ˆ and ª read well as call and apply, but you can use whatever you l
 $ npm install little-carrot
 ```
 
-## Example
+## Examples
 
 ```js
 var lc = require('lil-carrot')
@@ -67,6 +68,8 @@ var ˆ = require('lil-carrot').call
 
 ˆ(log, ˆ(sum35NumbersBelow, 1000))
 ```
+
+Its just Lisp :)
 
 # License
 
