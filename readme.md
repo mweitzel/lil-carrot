@@ -10,7 +10,7 @@ You can type ˆ and ª on a mac with [alt-i] and [alt-9], respectively.
 ## Installation
 
 ```
-$ npm install little-carrot
+$ npm install lil-carrot
 ```
 
 ## Examples
